@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2025 at 03:23 AM
+-- Generation Time: Feb 03, 2025 at 06:16 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -135,7 +135,7 @@ CREATE TABLE `tb_tanaman` (
 
 INSERT INTO `tb_tanaman` (`id_tanaman`, `nama_tanaman`, `catatan`, `alarm`, `id_user`) VALUES
 (10, 'Tes', 'tes', '20:45:00', 10),
-(12, 'Bunga Melati', '5 Batch bunga di halaman depan dan belakang, disiram 2 hari sekali.', '06:30:00', 11);
+(12, 'Bunga Melati', '5 Batch bunga di halaman depan dan belakang, disiram 2 hari sekali.', '11:30:00', 11);
 
 -- --------------------------------------------------------
 
@@ -240,7 +240,7 @@ ALTER TABLE `tb_komentar(old)`
 -- AUTO_INCREMENT for table `tb_tanaman`
 --
 ALTER TABLE `tb_tanaman`
-  MODIFY `id_tanaman` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_tanaman` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
