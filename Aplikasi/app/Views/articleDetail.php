@@ -16,7 +16,8 @@
                 <?php if (!empty($article['gambar'])): ?>
                     <img src="<?= base_url('uploads/' . $article['gambar']) ?>" alt="<?= esc($article['nama_tanaman']) ?>" class="img-fluid rounded mb-3">
                 <?php endif; ?>
-                <p><strong>Deskripsi:</strong> <?= esc($article['deskripsi']) ?></p>
+                <p><strong>Deskripsi:</strong></p>
+                <p><?= nl2br(esc($article['deskripsi'])) ?></p>
                 <p><strong>Sumber:</strong> <?= esc($article['sumber']) ?></p>
                 <a href="<?= site_url('dashboard') ?>" class="btn btn-warning">Kembali Ke Artikel</a>
             </div>

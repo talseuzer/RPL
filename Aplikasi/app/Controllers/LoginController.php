@@ -33,13 +33,13 @@ class LoginController extends BaseController
             ]);
             return redirect()->to('/dashboard');
         } else {
-            return redirect()->back()->with('error', 'Invalid username or password');
+            return redirect()->back()->with('error', 'Username atau password tidak valid.');
         }
     }
 
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/login')->with('success', 'Logged out successfully');
+        return redirect()->to('/login')->with('success', 'Berhasil Log Out');
     }
 }
